@@ -10,4 +10,12 @@ public class BuildScript
         
         BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
     }
+
+    public static void BuildSkyline()
+    {
+        string[] scenes = { "Assets/Scenes/Main.unity" };
+        string buildPath = "TapToBounce_Skyline.apk";
+        
+        BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
+    }
 }

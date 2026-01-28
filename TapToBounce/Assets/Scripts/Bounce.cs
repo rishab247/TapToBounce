@@ -17,6 +17,7 @@ public class Bounce : MonoBehaviour
 
     void Start()
     {
+        gameObject.tag = "Player";
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         if (sr != null) originalColor = sr.color;
@@ -34,6 +35,8 @@ public class Bounce : MonoBehaviour
         }
 
         ImproveGraphics();
+        SetupPhysics();
+        CreateScreenBoundaries();
 
         // Squash & Stretch
         if (GetComponent<SquashStretch>() == null)
@@ -43,6 +46,56 @@ public class Bounce : MonoBehaviour
 
         // Ensure rotation is allowed for visual effect
         rb.constraints = RigidbodyConstraints2D.None;
+    }
+
+    void SetupPhysics()
+    {
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        
+        // Add bounciness
+        PhysicsMaterial2D mat = new PhysicsMaterial2D("BouncyPlayer");
+        mat.bounciness = 0.8f;
+        mat.friction = 0.1f;
+        
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+        {
+            col.sharedMaterial = mat;
+        }
+
+        // Add some initial horizontal push
+        rb.velocity = new Vector2(2f, 0);
+    }
+
+    void CreateScreenBoundaries()
+    {
+        if (Camera.main == null) return;
+
+        float screenHeight = 2f * Camera.main.orthographicSize;
+        float screenWidth = screenHeight * Camera.main.aspect;
+
+        PhysicsMaterial2D wallMat = new PhysicsMaterial2D("BouncyWall");
+        wallMat.bounciness = 1.0f;
+        wallMat.friction = 0f;
+
+        // Left Wall
+        CreateWall("LeftWall", new Vector3(-screenWidth / 2f - 0.5f, 0, 0), new Vector2(1, 100), wallMat);
+        // Right Wall
+        CreateWall("RightWall", new Vector3(screenWidth / 2f + 0.5f, 0, 0), new Vector2(1, 100), wallMat);
+        // Top Wall (Ceiling)
+        CreateWall("TopWall", new Vector3(0, screenHeight / 2f + 0.5f, 0), new Vector2(100, 1), wallMat);
+        // Bottom Wall (Floor)
+        CreateWall("BottomWall", new Vector3(0, -screenHeight / 2f - 0.5f, 0), new Vector2(100, 1), wallMat);
+    }
+
+    void CreateWall(string name, Vector3 localPos, Vector2 size, PhysicsMaterial2D mat)
+    {
+        GameObject wall = new GameObject(name);
+        wall.transform.SetParent(Camera.main.transform);
+        wall.transform.localPosition = localPos;
+        BoxCollider2D col = wall.AddComponent<BoxCollider2D>();
+        col.size = size;
+        col.sharedMaterial = mat;
     }
 
     void Update()
@@ -55,6 +108,8 @@ public class Bounce : MonoBehaviour
             }
             return;
         }
+
+        HandleCameraFollow();
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -70,6 +125,17 @@ public class Bounce : MonoBehaviour
         if (transform.position.y < -10)
         {
             Die();
+        }
+    }
+
+    void HandleCameraFollow()
+    {
+        if (Camera.main != null)
+        {
+            Vector3 camPos = Camera.main.transform.position;
+            // Only follow on X axis to show progression
+            camPos.x = Mathf.Lerp(camPos.x, transform.position.x, Time.deltaTime * 5f);
+            Camera.main.transform.position = camPos;
         }
     }
 
@@ -274,16 +340,17 @@ public class Bounce : MonoBehaviour
                 {
                     float height = 2f * Camera.main.orthographicSize;
                     float width = height * Camera.main.aspect;
-                    bgObj.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 10f);
+                    bgObj.transform.SetParent(Camera.main.transform);
+                    bgObj.transform.localPosition = new Vector3(0, 0, 10f);
                     bgObj.transform.localScale = new Vector3(width, height, 1f);
                 }
                 else
                 {
                     float dist = 50f;
-                    bgObj.transform.position = Camera.main.transform.position + Camera.main.transform.forward * dist;
+                    bgObj.transform.SetParent(Camera.main.transform);
+                    bgObj.transform.localPosition = Vector3.forward * dist;
                     float height = 2.0f * Mathf.Tan(0.5f * Camera.main.fieldOfView * Mathf.Deg2Rad) * dist;
                     float width = height * Camera.main.aspect;
-                    bgObj.transform.rotation = Camera.main.transform.rotation;
                     bgObj.transform.localScale = new Vector3(width, height, 1f);
                 }
             }

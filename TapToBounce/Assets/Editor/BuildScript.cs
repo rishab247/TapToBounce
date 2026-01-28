@@ -42,4 +42,12 @@ public class BuildScript
         
         BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
     }
+
+    public static void BuildPremium()
+    {
+        string[] scenes = { "Assets/Scenes/Main.unity" };
+        string buildPath = "TapToBounce_Premium.apk";
+        
+        BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
+    }
 }

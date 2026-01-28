@@ -19,6 +19,8 @@ public class Bounce : MonoBehaviour
     private Vector3 originalScale;
     private Transform robotVisuals;
     private float targetRotation = 0f;
+    private float shakeAmount = 0f;
+    private Vector3 camOriginalOffset;
 
     void Start()
     {
@@ -29,6 +31,8 @@ public class Bounce : MonoBehaviour
         
         sr = GetComponent<SpriteRenderer>();
         originalScale = transform.localScale;
+
+        if (Camera.main != null) camOriginalOffset = Camera.main.transform.localPosition;
 
         if (GetComponent<Collider2D>() == null)
         {
@@ -125,7 +129,9 @@ public class Bounce : MonoBehaviour
         }
 
         HandleCameraFollow();
+        HandleCameraShake();
         HandleFloorConstraint();
+        UpdateParallax();
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -144,11 +150,28 @@ public class Bounce : MonoBehaviour
         }
     }
 
+    void HandleCameraShake()
+    {
+        if (shakeAmount > 0 && Camera.main != null)
+        {
+            Vector3 pos = Camera.main.transform.position;
+            pos += (Vector3)Random.insideUnitCircle * shakeAmount;
+            Camera.main.transform.position = pos;
+            shakeAmount = Mathf.Lerp(shakeAmount, 0, Time.deltaTime * 10f);
+        }
+    }
+
+    void TriggerShake(float amount)
+    {
+        shakeAmount = amount;
+    }
+
     void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, bounceForce);
         SpawnJumpEffect();
         SoundManager.Instance?.PlayJump();
+        TriggerShake(0.1f);
 
         // Procedural Jump Animation: Stretch on jump
         transform.localScale = new Vector3(originalScale.x * 0.7f, originalScale.y * 1.4f, originalScale.z);
@@ -195,6 +218,13 @@ public class Bounce : MonoBehaviour
         // Trigger Squash
         SquashStretch ss = GetComponent<SquashStretch>();
         if (ss != null) ss.TriggerSquash();
+        
+        // Physics feedback
+        if (collision.relativeVelocity.magnitude > 3f)
+        {
+            TriggerShake(0.15f);
+            transform.localScale = new Vector3(originalScale.x * 1.3f, originalScale.y * 0.7f, originalScale.z);
+        }
 
         // Spawn Particles at contact point
         if (collision.contacts.Length > 0)
@@ -260,6 +290,7 @@ public class Bounce : MonoBehaviour
     {
         // 1. Add Realistic Background
         CreateRealisticBackground();
+        CreateParallaxLayers();
 
         // 2. Enhance Player Visuals
         if (sr != null)
@@ -272,16 +303,67 @@ public class Bounce : MonoBehaviour
         if (GetComponent<TrailRenderer>() == null)
         {
             TrailRenderer trail = gameObject.AddComponent<TrailRenderer>();
-            trail.time = 0.4f;
-            trail.startWidth = 0.6f;
+            trail.time = 0.5f;
+            trail.startWidth = 0.8f;
             trail.endWidth = 0.0f;
+            
+            // Use a better material with additive blending if possible
             trail.material = new Material(Shader.Find("Sprites/Default"));
-            trail.startColor = new Color(1f, 0.4f, 0.5f, 0.6f);
-            trail.endColor = new Color(1f, 0.9f, 0.6f, 0f);
+            
+            // Neon Gradient
+            Gradient gradient = new Gradient();
+            gradient.SetKeys(
+                new GradientColorKey[] { new GradientColorKey(Color.cyan, 0.0f), new GradientColorKey(new Color(0.7f, 0f, 1f), 1.0f) },
+                new GradientAlphaKey[] { new GradientAlphaKey(0.8f, 0.0f), new GradientAlphaKey(0f, 1.0f) }
+            );
+            trail.colorGradient = gradient;
             trail.sortingOrder = -1; 
         }
 
         AddFace();
+    }
+
+    private Transform[] parallaxLayers;
+    private float[] parallaxFactors = { 0.2f, 0.5f };
+
+    void CreateParallaxLayers()
+    {
+        parallaxLayers = new Transform[2];
+        Color[] layerColors = { new Color(0.1f, 0.1f, 0.2f), new Color(0.15f, 0.15f, 0.3f) };
+        
+        for (int i = 0; i < 2; i++)
+        {
+            GameObject layer = new GameObject("ParallaxLayer_" + i);
+            parallaxLayers[i] = layer.transform;
+            
+            // Create some building silhouettes
+            for (int j = -10; j < 50; j++)
+            {
+                GameObject b = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                b.name = "Bldg_" + j;
+                Destroy(b.GetComponent<Collider>());
+                b.transform.SetParent(layer.transform);
+                float h = Random.Range(3f, 8f);
+                float w = Random.Range(2f, 4f);
+                b.transform.position = new Vector3(j * 4f, -4f + h/2f, 15f + i * 5f);
+                b.transform.localScale = new Vector3(w, h, 1f);
+                b.GetComponent<Renderer>().material = new Material(Shader.Find("Unlit/Color"));
+                b.GetComponent<Renderer>().material.color = layerColors[i];
+            }
+        }
+    }
+
+    void UpdateParallax()
+    {
+        if (parallaxLayers == null || Camera.main == null) return;
+        
+        float camX = Camera.main.transform.position.x;
+        for (int i = 0; i < parallaxLayers.Length; i++)
+        {
+            Vector3 pos = parallaxLayers[i].position;
+            pos.x = camX * parallaxFactors[i];
+            parallaxLayers[i].position = pos;
+        }
     }
 
     void AddFace()
@@ -428,21 +510,36 @@ public class Bounce : MonoBehaviour
         ParticleSystem ps = pObj.AddComponent<ParticleSystem>();
         var main = ps.main;
         main.duration = 1f;
-        main.startLifetime = 0.5f;
-        main.startSpeed = 3f;
-        main.startSize = 0.3f;
-        main.startColor = new Color(1f, 0.9f, 0.8f); 
+        main.startLifetime = 0.6f;
+        main.startSpeed = 4f;
+        main.startSize = 0.4f;
+        
+        // Neon Blue/Cyan
+        main.startColor = new ParticleSystem.MinMaxGradient(Color.cyan, new Color(0.5f, 0f, 1f)); 
         
         var emission = ps.emission;
         emission.enabled = false; 
         
         var shape = ps.shape;
         shape.shapeType = ParticleSystemShapeType.Circle;
+        shape.radius = 0.3f;
+
+        var colorOverLife = ps.colorOverLifetime;
+        colorOverLife.enabled = true;
+        Gradient grad = new Gradient();
+        grad.SetKeys(new GradientColorKey[] { new GradientColorKey(Color.white, 0f), new GradientColorKey(Color.cyan, 1f) }, 
+                     new GradientAlphaKey[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f) });
+        colorOverLife.color = grad;
+
+        var sizeOverLife = ps.sizeOverLifetime;
+        sizeOverLife.enabled = true;
+        sizeOverLife.size = new ParticleSystem.MinMaxCurve(1.0f, 0.0f);
 
         ParticleSystemRenderer psr = pObj.GetComponent<ParticleSystemRenderer>();
         psr.material = new Material(Shader.Find("Sprites/Default"));
+        psr.sortingOrder = 5;
 
-        ps.Emit(15);
+        ps.Emit(20);
         Destroy(pObj, 1f);
     }
 
@@ -455,22 +552,27 @@ public class Bounce : MonoBehaviour
         ParticleSystem ps = pObj.AddComponent<ParticleSystem>();
         var main = ps.main;
         main.duration = 1f;
-        main.startLifetime = 0.3f;
-        main.startSpeed = 5f;
-        main.startSize = 0.2f;
-        main.startColor = new Color(1f, 1f, 0.5f); 
+        main.startLifetime = 0.4f;
+        main.startSpeed = 6f;
+        main.startSize = 0.25f;
+        main.startColor = new Color(1f, 1f, 0f); // Bright Yellow
         
         var emission = ps.emission;
         emission.enabled = false; 
         
         var shape = ps.shape;
         shape.shapeType = ParticleSystemShapeType.Cone;
-        shape.angle = 60f;
+        shape.angle = 45f;
+
+        var sizeOverLife = ps.sizeOverLifetime;
+        sizeOverLife.enabled = true;
+        sizeOverLife.size = new ParticleSystem.MinMaxCurve(1.0f, 0.0f);
 
         ParticleSystemRenderer psr = pObj.GetComponent<ParticleSystemRenderer>();
         psr.material = new Material(Shader.Find("Sprites/Default"));
+        psr.sortingOrder = 5;
 
-        ps.Emit(25);
+        ps.Emit(30);
         Destroy(pObj, 1f);
     }
 }

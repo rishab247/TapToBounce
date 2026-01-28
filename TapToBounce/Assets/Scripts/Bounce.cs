@@ -17,13 +17,23 @@ public class Bounce : MonoBehaviour
 
     private int spinDirection = 1;
     private Vector3 originalScale;
+    private Transform robotVisuals;
+    private float targetRotation = 0f;
 
     void Start()
     {
         gameObject.tag = "Player";
         rb = GetComponent<Rigidbody2D>();
+        if (rb == null) rb = gameObject.AddComponent<Rigidbody2D>();
+        
         sr = GetComponent<SpriteRenderer>();
         originalScale = transform.localScale;
+
+        if (GetComponent<Collider2D>() == null)
+        {
+            gameObject.AddComponent<BoxCollider2D>();
+        }
+
         if (sr != null) originalColor = sr.color;
 
         // Ensure SoundManager exists
@@ -122,12 +132,14 @@ public class Bounce : MonoBehaviour
         }
 
         // Procedural Jump Animation (Smoothing back to original scale)
-        transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 3f);
+        transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 5f);
         
-        // Improve rotation animation: apply continuous torque while moving fast
-        if (rb.velocity.magnitude > 1f)
+        // Proper Spin Animation: Smoothly rotate the visual container
+        if (robotVisuals != null)
         {
-            rb.angularVelocity = Mathf.Lerp(rb.angularVelocity, spinDirection * 360f, Time.deltaTime * 2f);
+            float curRot = robotVisuals.localEulerAngles.z;
+            float nextRot = Mathf.LerpAngle(curRot, targetRotation, Time.deltaTime * 10f);
+            robotVisuals.localEulerAngles = new Vector3(0, 0, nextRot);
         }
     }
 
@@ -138,12 +150,11 @@ public class Bounce : MonoBehaviour
         SoundManager.Instance?.PlayJump();
 
         // Procedural Jump Animation: Stretch on jump
-        transform.localScale = new Vector3(originalScale.x * 0.8f, originalScale.y * 1.5f, originalScale.z);
+        transform.localScale = new Vector3(originalScale.x * 0.7f, originalScale.y * 1.4f, originalScale.z);
 
-        // Control Spin Direction: Alternate on each jump
+        // Control Spin Direction: Alternate 360 degree flip
         spinDirection *= -1;
-        rb.angularVelocity = 0f; // Reset before applying new direction
-        rb.AddTorque(spinDirection * -5f, ForceMode2D.Impulse);
+        targetRotation += spinDirection * 360f;
     }
 
     void HandleFloorConstraint()
@@ -274,53 +285,53 @@ public class Bounce : MonoBehaviour
 
     void AddFace()
     {
-        if (transform.Find("RobotParts") != null) return;
+        if (transform.Find("RobotVisuals") != null) return;
 
-        GameObject robotParts = new GameObject("RobotParts");
-        robotParts.transform.SetParent(transform);
-        robotParts.transform.localPosition = Vector3.zero;
-        robotParts.transform.localScale = Vector3.one;
+        GameObject visObj = new GameObject("RobotVisuals");
+        visObj.transform.SetParent(transform);
+        visObj.transform.localPosition = Vector3.zero;
+        visObj.transform.localScale = Vector3.one;
+        robotVisuals = visObj.transform;
 
-        // Metallic Body Look (Square-ish Head)
-        sr.color = new Color(0.7f, 0.7f, 0.8f); // Metallic silver-blue
+        // Robotic Body (Lower)
+        GameObject body = CreatePart("Torso", new Vector3(0, -0.2f, 0), new Vector3(0.8f, 0.6f, 1f), new Color(0.5f, 0.5f, 0.6f), robotVisuals);
         
+        // Robotic Head (Upper)
+        GameObject head = CreatePart("Head", new Vector3(0, 0.25f, 0), new Vector3(0.7f, 0.5f, 1f), new Color(0.7f, 0.7f, 0.8f), robotVisuals);
+
         // Antennas
-        CreatePart("AntennaL", new Vector3(-0.2f, 0.4f, 0), new Vector3(0.05f, 0.3f, 1f), Color.gray, robotParts.transform);
-        CreatePart("AntennaR", new Vector3(0.2f, 0.4f, 0), new Vector3(0.05f, 0.3f, 1f), Color.gray, robotParts.transform);
-        // Antenna Tips (Glowing)
-        CreatePart("TipL", new Vector3(-0.2f, 0.55f, 0), new Vector3(0.1f, 0.1f, 1f), Color.red, robotParts.transform);
-        CreatePart("TipR", new Vector3(0.2f, 0.55f, 0), new Vector3(0.1f, 0.1f, 1f), Color.red, robotParts.transform);
+        CreatePart("AntennaL", new Vector3(-0.2f, 0.6f, 0), new Vector3(0.05f, 0.3f, 1f), Color.gray, robotVisuals);
+        CreatePart("AntennaR", new Vector3(0.2f, 0.6f, 0), new Vector3(0.05f, 0.3f, 1f), Color.gray, robotVisuals);
+        CreatePart("TipL", new Vector3(-0.2f, 0.75f, 0), new Vector3(0.12f, 0.12f, 1f), Color.red, robotVisuals);
+        CreatePart("TipR", new Vector3(0.2f, 0.75f, 0), new Vector3(0.12f, 0.12f, 1f), Color.red, robotVisuals);
 
-        // Generate Textures
-        Texture2D eyeTex = CreateCircleTexture(64, Color.black);
-        Texture2D glowTex = CreateCircleTexture(32, Color.cyan);
+        // Robotic Arms (Tucked in)
+        CreatePart("ArmL", new Vector3(-0.45f, -0.1f, 0), new Vector3(0.2f, 0.4f, 1f), new Color(0.4f, 0.4f, 0.5f), robotVisuals);
+        CreatePart("ArmR", new Vector3(0.45f, -0.1f, 0), new Vector3(0.2f, 0.4f, 1f), new Color(0.4f, 0.4f, 0.5f), robotVisuals);
+
+        // Visor
+        GameObject visor = CreatePart("Visor", new Vector3(0, 0.3f, 0), new Vector3(0.55f, 0.2f, 1f), new Color(0.1f, 0.1f, 0.1f), robotVisuals);
         
-        Sprite eyeSprite = Sprite.Create(eyeTex, new Rect(0, 0, 64, 64), new Vector2(0.5f, 0.5f));
+        // Glow Eyes
+        Texture2D glowTex = CreateCircleTexture(32, Color.cyan);
         Sprite glowSprite = Sprite.Create(glowTex, new Rect(0, 0, 32, 32), new Vector2(0.5f, 0.5f));
 
-        // Robotic Visor/Eyes
-        GameObject visor = CreatePart("Visor", new Vector3(0, 0.1f, 0), new Vector3(0.6f, 0.25f, 1f), new Color(0.2f, 0.2f, 0.2f), robotParts.transform);
-        
-        // Left Eye (Glow)
-        GameObject leftEye = new GameObject("LeftEye");
-        leftEye.transform.SetParent(visor.transform);
-        leftEye.transform.localPosition = new Vector3(-0.25f, 0, 0);
-        leftEye.transform.localScale = new Vector3(0.3f, 0.5f, 1f);
-        SpriteRenderer leSr = leftEye.AddComponent<SpriteRenderer>();
-        leSr.sprite = glowSprite;
-        leSr.sortingOrder = 6;
+        GameObject eyeL = new GameObject("EyeL");
+        eyeL.transform.SetParent(visor.transform);
+        eyeL.transform.localPosition = new Vector3(-0.25f, 0, 0);
+        eyeL.transform.localScale = new Vector3(0.3f, 0.6f, 1f);
+        eyeL.AddComponent<SpriteRenderer>().sprite = glowSprite;
+        eyeL.GetComponent<SpriteRenderer>().sortingOrder = 10;
 
-        // Right Eye (Glow)
-        GameObject rightEye = new GameObject("RightEye");
-        rightEye.transform.SetParent(visor.transform);
-        rightEye.transform.localPosition = new Vector3(0.25f, 0, 0);
-        rightEye.transform.localScale = new Vector3(0.3f, 0.5f, 1f);
-        SpriteRenderer reSr = rightEye.AddComponent<SpriteRenderer>();
-        reSr.sprite = glowSprite;
-        reSr.sortingOrder = 6;
-        
-        // Mouth (Electronic display line)
-        CreatePart("Mouth", new Vector3(0, -0.2f, 0), new Vector3(0.3f, 0.05f, 1f), Color.cyan, robotParts.transform);
+        GameObject eyeR = new GameObject("EyeR");
+        eyeR.transform.SetParent(visor.transform);
+        eyeR.transform.localPosition = new Vector3(0.25f, 0, 0);
+        eyeR.transform.localScale = new Vector3(0.3f, 0.6f, 1f);
+        eyeR.AddComponent<SpriteRenderer>().sprite = glowSprite;
+        eyeR.GetComponent<SpriteRenderer>().sortingOrder = 10;
+
+        // Hide original sprite renderer if it exists to avoid overlap
+        if (sr != null) sr.enabled = false;
     }
 
     GameObject CreatePart(string name, Vector3 pos, Vector3 scale, Color color, Transform parent)

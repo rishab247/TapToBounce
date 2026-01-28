@@ -18,8 +18,12 @@ public class LevelGenerator : MonoBehaviour
         GameObject floor = GameObject.CreatePrimitive(PrimitiveType.Cube);
         floor.name = "Floor";
         floor.transform.position = new Vector3(0, -4, 0);
-        floor.transform.localScale = new Vector3(20, 1, 1);
+        floor.transform.localScale = new Vector3(50, 1, 1);
         floor.GetComponent<Renderer>().material.color = Color.gray;
+        
+        // Make Floor Solid for 2D
+        Destroy(floor.GetComponent<Collider>());
+        floor.AddComponent<BoxCollider2D>();
         
         // Procedural Generation
         float currentX = -5f;
@@ -40,6 +44,10 @@ public class LevelGenerator : MonoBehaviour
             platform.transform.position = pos;
             platform.transform.localScale = new Vector3(1.5f, 0.5f, 1f);
             platform.GetComponent<Renderer>().material.color = new Color(0.3f, 0.8f, 0.3f);
+
+            // Make it solid for 2D Physics
+            Destroy(platform.GetComponent<Collider>());
+            platform.AddComponent<BoxCollider2D>();
             
             // Add Moving Platform script sometimes
             if (roll > 0.8f)

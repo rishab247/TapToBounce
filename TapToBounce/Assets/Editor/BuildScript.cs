@@ -34,4 +34,12 @@ public class BuildScript
         
         BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
     }
+
+    public static void BuildSolid()
+    {
+        string[] scenes = { "Assets/Scenes/Main.unity" };
+        string buildPath = "TapToBounce_Solid.apk";
+        
+        BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
+    }
 }

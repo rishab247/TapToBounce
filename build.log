@@ -1,0 +1,760 @@
+Unity Editor version:    2022.3.62f3 (96770f904ca7)
+Branch:                  2022.3/respin/2022.3.62f2-4af31df585-v2
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #18~24.04.1-Ubuntu SMP Mon Nov 24 19:46:27 UTC 2025
+Kernel version:          6.14.0-1018-aws
+Architecture:            x86_64
+Available memory:        3816 MB
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-ubuntu doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 103317)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu" at "2026-01-28T08:35:55.527763Z"
+[SignatureVerifier] Application signature verification not supported on this platform.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.2+bdef8f5
+  Session Id:              c329bd5acca74a37bd75b8a548a1b92e
+  Correlation Id:          b853cf0d3918d25877bab9b827c3b65d
+  External correlation Id: 3675460328723646696
+  Machine Id:              3aNmOTX8FMiek9FRz+cJ5E9RyY4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ubuntu" (connect: 0.86s, validation: 0.09s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu-notifications" at "2026-01-28T08:35:55.617945Z"
+[Licensing::Module] Connected to LicensingClient (PId: 103317, launch time: 0.00, total connection time: 0.95s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Error: Code 500 while processing request (status: Unable to update licenses. Errors: No ULF license found.,Token not found in cache)
+[Licensing::Client] Error: Code 500 while updating license in client (status: Unable to update licenses. Errors: No ULF license found.,Token not found in cache)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "13469877301393-UnityPersXXXX"
+Pro License: NO
+Initialize udev device monitor.
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Unity
+-quit
+-batchmode
+-nographics
+-projectPath
+/home/ubuntu/clawd/TapToBounce
+-executeMethod
+BuildScript.BuildAndroid
+-logFile
+build.log
+Successfully changed project path to: /home/ubuntu/clawd/TapToBounce
+/home/ubuntu/clawd/TapToBounce
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [130703951881216]  Target information:
+
+Player connection [130703951881216]  * "[IP] 172.31.22.172 [Port] 55504 [Flags] 2 [Guid] 157869330 [EditorId] 157869330 [Version] 1048832 [Id] LinuxEditor(16,172.31.22.172) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [130703951881216] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [130703951881216] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 2 workers.
+Error opening a HTTP REST server port between 38000 and 38100
+[Package Manager] UpmClient::Connect -- Connected to IPC stream "Upm-103313" after 0.4 seconds.
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 32 packages:
+  Built-in packages:
+    com.unity.modules.ai@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.ai@1.0.0)
+    com.unity.modules.androidjni@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.androidjni@1.0.0)
+    com.unity.modules.animation@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.animation@1.0.0)
+    com.unity.modules.assetbundle@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.assetbundle@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.audio@1.0.0)
+    com.unity.modules.cloth@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.cloth@1.0.0)
+    com.unity.modules.director@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.director@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.physics@1.0.0)
+    com.unity.modules.physics2d@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.physics2d@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.terrain@1.0.0)
+    com.unity.modules.terrainphysics@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.terrainphysics@1.0.0)
+    com.unity.modules.tilemap@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.tilemap@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.ui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.uielements@1.0.0)
+    com.unity.modules.umbra@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.umbra@1.0.0)
+    com.unity.modules.unityanalytics@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.unityanalytics@1.0.0)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0)
+    com.unity.modules.vehicles@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.vehicles@1.0.0)
+    com.unity.modules.video@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.video@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.vr@1.0.0)
+    com.unity.modules.wind@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.wind@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.xr@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: /home/ubuntu/clawd/TapToBounce/Library/PackageCache/com.unity.modules.subsystems@1.0.0)
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5204:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5204:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5204:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+Forced to initialize FMOD to to the device driver's system output rate 48000, this may impact performance and/or give inconsistent experiences compared to selected sample rate 48000
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5204:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5204:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5204:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+FMOD initialized on nosound output
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.11 seconds
+[Licensing::Client] Successfully resolved entitlement details
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f3 (96770f904ca7)
+[Subsystems] Discovering subsystems at path /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/ubuntu/clawd/TapToBounce/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+[Licensing::Client] Successfully resolved entitlement details
+Initialize mono
+Mono path[0] = '/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Managed'
+Mono path[1] = '/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
+Mono config path = '/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56313
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.016893 seconds.
+- Loaded All Assemblies, in  0.730 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 92 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.348 seconds
+Domain Reload Profiling: 1078ms
+	BeginReloadAssembly (366ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (203ms)
+		LoadAssemblies (371ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (193ms)
+			TypeCache.Refresh (191ms)
+				TypeCache.ScanAssembly (175ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (348ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (306ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (171ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (92ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+Warning: Disk space low. The project is on a drive with diskspace below 1.00 GB. Please free up some space for Unity to work correctly.
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-7e3f61818f1a0fd1fd3d3bf49d89c741
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/ubuntu/clawd/TapToBounce/
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 76.0215ms
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 3s431ms
+[101/107    1s] Csc Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.dll (+2 others)
+[102/107    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[103/107    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[104/107    0s] Csc Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[105/107    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[106/107    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (3.42 seconds), 6 items updated, 107 evaluated
+Total cache size 0
+Total cache size after purge 0
+AssetDatabase: script compilation time: 4.474486s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.242 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start importing Assets/Editor/BuildScript.cs using Guid(51b8c550aabe01563859fdee9516beb7) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 2 workers.
+ -> (artifact id: '579c6ae74b70dd72921ebaca484b2b15') in 0.019528 seconds
+Start importing Assets/Scripts/Bounce.cs using Guid(5e89a5ed46788afb5903251d90b1e1f8) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 2 workers.
+ -> (artifact id: '33a620bbdc34098993d7250539436582') in 0.001431 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.251 seconds
+Domain Reload Profiling: 493ms
+	BeginReloadAssembly (174ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (16ms)
+		LoadAssemblies (109ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (5ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (251ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (155ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (19ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6c6472238b0d1490aaedf74d400704cc): Total: 5.131 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=3 ms, native=101 ms
+		Asset DB Callback time: managed=38 ms, native=8 ms
+		Scripting: domain reloads=1, domain reload time=500 ms, compile time=4476 ms, other=2 ms
+		Project Asset Count: scripts=89, non-scripts=34
+		Asset File Changes: new=0, changed=2, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokeBeforeRefreshCallbacks: 2.545ms
+	ApplyChangesToAssetFolders: 0.058ms
+	Scan: 35.252ms
+	OnSourceAssetsModified: 2.438ms
+	GetAllGuidsForCategorization: 0.016ms
+	CategorizeAssets: 0.891ms
+	ImportOutOfDateAssets: 277.167ms (-4224.673ms without children)
+		ImportManagerImport: 25.227ms (3.922ms without children)
+			ImportInProcess: 21.286ms
+			UpdateCategorizedAssets: 0.019ms
+		CompileScripts: 4476.002ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.095ms
+		ReloadImportedAssets: 0.397ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.029ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.090ms
+	PostProcessAllAssets: 40.316ms
+	Hotreload: 1.304ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.002ms
+	UnloadStreamsBegin: 0.301ms
+	PersistCurrentRevisions: 0.043ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 0.001ms
+	Untracked: 4770.762ms
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 0.091ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+UpdateMenuTitleForLanguage: 10
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-TapToBounce
+[PhysX] Initialized MultithreadedTaskDispatcher with 2 workers.
+ProgressiveSceneManager::Cancel()
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (369.8 KB). Loaded Objects now: 525.
+Memory consumption went from 69.1 MB to 68.7 MB.
+Total: 3.639558 ms (FindLiveObjects: 0.032998 ms CreateObjectMapping: 0.003352 ms MarkObjects: 3.347021 ms  DeleteObjects: 0.254086 ms)
+
+Starting Android Build...
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BuildScript:BuildAndroid () (at Assets/Editor/BuildScript.cs:9)
+
+(Filename: Assets/Editor/BuildScript.cs Line: 9)
+
+Building APK to: TapToBounce_Realistic.apk
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BuildScript:BuildAndroid () (at Assets/Editor/BuildScript.cs:33)
+
+(Filename: Assets/Editor/BuildScript.cs Line: 33)
+
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 2 workers.
+ -> (artifact id: 'c5ab333cdaad0db29822bc1f75fda207') in 0.001185 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=776c5338b26162cf8a8336be0fa6545e): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+DisplayProgressbar: Checking prerequisites
+Android PostProcess task "Checking prerequisites" took 15.0762 ms
+DisplayProgressbar: Detect Java Development Kit (JDK)
+Android PostProcess task "Detect Java Development Kit (JDK)" took 202.0272 ms
+DisplayProgressbar: Detecting Android SDK
+AndroidSDKTools:
+
+	root          : /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/SDK
+	cmdline-tools : /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmdline-tools/6.0
+	platform-tools: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools
+	build-tools   : /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/build-tools/34.0.0
+
+	adb           : /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
+
+Android PostProcess task "Detecting Android SDK" took 1870.8877 ms
+DisplayProgressbar: Detect Android NDK
+Android PostProcess task "Detect Android NDK" took 3.8444 ms
+Android PostProcess task "Trying to find a suitable Android device" took 0.7041 ms
+DisplayProgressbar: Checking Graphics API compatibility
+Android PostProcess task "Checking Graphics API compatibility" took 1.5643 ms
+DisplayProgressbar: Check resources
+Android PostProcess task "Check resources" took 0.2076 ms
+DisplayProgressbar: Check Android Player Settings
+Android PostProcess task "Check Android Player Settings" took 0.2216 ms
+Launched and connected shader compiler UnityShaderCompiler after 0.11 seconds
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 2.9908ms
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aESkipCompile.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s207ms
+[2/3        0s] BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json
+*** Tundra build success (0.19 seconds), 1 items updated, 3 evaluated
+Total cache size 0
+Total cache size after purge 0
+Asset Pipeline Refresh (id=48f6746657722671eb5d7b24f3a9c3a1): Total: 0.003 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ScriptCompilation] Requested script compilation because: Recompiling scripts for player build.
+BuildPlayer: start building target 13
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.5222ms
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aP.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+Total cache size 0
+Total cache size after purge 0
+ExitCode: 0 Duration: 0s567ms
+[70/75      0s] Csc Library/Bee/artifacts/1300b0aP.dag/Assembly-CSharp.dll (+2 others)
+[71/75      0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll
+[72/75      0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb
+[74/75      0s] BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)
+*** Tundra build success (0.46 seconds), 4 items updated, 75 evaluated
+Not rebuilding Data files -- no changes
+Asset Pipeline Refresh (id=0cd1b94a59e210432ac2f2126a595416): Total: 0.004 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+
+
+Mono dependencies included in the build
+Dependency assembly - System.Text.Encoding.CodePages.dll
+Dependency assembly - System.Threading.Tasks.Parallel.dll
+Dependency assembly - System.Web.Extensions.Design.dll
+Dependency assembly - System.Resources.ReaderWriter.dll
+Dependency assembly - System.Runtime.DurableInstancing.dll
+Dependency assembly - System.Runtime.Loader.dll
+Dependency assembly - System.Security.Cryptography.Pkcs.dll
+Dependency assembly - System.Web.Services.dll
+Dependency assembly - System.Diagnostics.Tools.dll
+Dependency assembly - System.Xaml.dll
+Dependency assembly - System.Web.dll
+Dependency assembly - System.Windows.Forms.DataVisualization.dll
+Dependency assembly - System.Threading.AccessControl.dll
+Dependency assembly - System.Threading.ThreadPool.dll
+Dependency assembly - System.Security.Cryptography.RSA.dll
+Dependency assembly - System.Core.dll
+Dependency assembly - System.ServiceModel.Internals.dll
+Dependency assembly - System.Design.dll
+Dependency assembly - System.Runtime.InteropServices.dll
+Dependency assembly - System.Security.dll
+Dependency assembly - System.ServiceModel.Routing.dll
+Dependency assembly - System.Net.Http.dll
+Dependency assembly - System.Text.Encoding.Extensions.dll
+Dependency assembly - System.EnterpriseServices.dll
+Dependency assembly - System.Diagnostics.StackTrace.dll
+Dependency assembly - System.IO.MemoryMappedFiles.dll
+Dependency assembly - System.Globalization.Extensions.dll
+Dependency assembly - System.Security.Cryptography.Primitives.dll
+Dependency assembly - System.Data.SqlClient.dll
+Dependency assembly - System.ObjectModel.dll
+Dependency assembly - System.Linq.Queryable.dll
+Dependency assembly - System.IO.FileSystem.dll
+Dependency assembly - System.Numerics.dll
+Dependency assembly - System.Xml.dll
+Dependency assembly - System.Diagnostics.TraceEvent.dll
+Dependency assembly - System.Threading.Tasks.dll
+Dependency assembly - System.Web.Extensions.dll
+Dependency assembly - System.Security.Cryptography.Encryption.dll
+Dependency assembly - System.Reflection.Emit.dll
+Dependency assembly - System.Net.Mail.dll
+Dependency assembly - System.Security.Cryptography.X509Certificates.dll
+Dependency assembly - System.ServiceModel.Primitives.dll
+Dependency assembly - netstandard.dll
+Dependency assembly - System.Diagnostics.Contracts.dll
+Dependency assembly - System.Net.WebSockets.dll
+Dependency assembly - System.Globalization.dll
+Dependency assembly - System.Data.Services.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDiffieHellman.dll
+Dependency assembly - System.dll
+Dependency assembly - System.Text.RegularExpressions.dll
+Dependency assembly - System.IO.Compression.ZipFile.dll
+Dependency assembly - System.Net.Primitives.dll
+Dependency assembly - System.ComponentModel.TypeConverter.dll
+Dependency assembly - System.Security.Claims.dll
+Dependency assembly - System.ServiceModel.NetTcp.dll
+Dependency assembly - System.IdentityModel.Selectors.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.Soap.dll
+Dependency assembly - System.Xml.Xsl.Primitives.dll
+Dependency assembly - System.Threading.dll
+Dependency assembly - System.Collections.Concurrent.dll
+Dependency assembly - System.Diagnostics.Tracing.dll
+Dependency assembly - System.Data.OracleClient.dll
+Dependency assembly - Microsoft.Win32.Registry.AccessControl.dll
+Dependency assembly - System.Security.Principal.Windows.dll
+Dependency assembly - System.Xml.Linq.dll
+Dependency assembly - Assembly-CSharp.dll
+Dependency assembly - mscorlib.dll
+Dependency assembly - System.Net.Security.dll
+Dependency assembly - System.Dynamic.Runtime.dll
+Dependency assembly - System.Net.Cache.dll
+Dependency assembly - System.Threading.Tasks.Extensions.dll
+Dependency assembly - System.ComponentModel.Primitives.dll
+Dependency assembly - System.Runtime.Serialization.Json.dll
+Dependency assembly - System.Resources.ResourceManager.dll
+Dependency assembly - System.Diagnostics.Debug.dll
+Dependency assembly - Mono.Data.Sqlite.dll
+Dependency assembly - System.Reflection.Emit.ILGeneration.dll
+Dependency assembly - System.Net.WebHeaderCollection.dll
+Dependency assembly - System.Net.WebSockets.Client.dll
+Dependency assembly - Mono.Security.dll
+Dependency assembly - System.Net.NameResolution.dll
+Dependency assembly - System.Globalization.Calendars.dll
+Dependency assembly - System.Security.Cryptography.Hashing.Algorithms.dll
+Dependency assembly - System.ServiceModel.Activation.dll
+Dependency assembly - System.Json.dll
+Dependency assembly - System.Net.ServicePoint.dll
+Dependency assembly - System.ValueTuple.dll
+Dependency assembly - System.Runtime.Extensions.dll
+Dependency assembly - System.Runtime.Numerics.dll
+Dependency assembly - System.Xml.XPath.dll
+Dependency assembly - System.Reflection.Emit.Lightweight.dll
+Dependency assembly - System.Linq.Expressions.dll
+Dependency assembly - System.Net.NetworkInformation.dll
+Dependency assembly - System.Net.AuthenticationManager.dll
+Dependency assembly - Accessibility.dll
+Dependency assembly - System.ServiceProcess.ServiceController.dll
+Dependency assembly - Mono.Data.Tds.dll
+Dependency assembly - System.Configuration.dll
+Dependency assembly - System.Security.Cryptography.ProtectedData.dll
+Dependency assembly - System.Diagnostics.FileVersionInfo.dll
+Dependency assembly - System.ServiceModel.Security.dll
+Dependency assembly - System.ServiceModel.Duplex.dll
+Dependency assembly - System.Runtime.Serialization.dll
+Dependency assembly - System.ServiceModel.Http.dll
+Dependency assembly - System.Security.Cryptography.Encryption.Aes.dll
+Dependency assembly - Microsoft.Win32.Primitives.dll
+Dependency assembly - System.Runtime.Remoting.dll
+Dependency assembly - System.Xml.XPath.XmlDocument.dll
+Dependency assembly - System.Security.Cryptography.Csp.dll
+Dependency assembly - System.Threading.Overlapped.dll
+Dependency assembly - System.ComponentModel.DataAnnotations.dll
+Dependency assembly - System.Security.Cryptography.Algorithms.dll
+Dependency assembly - System.Security.Cryptography.OpenSsl.dll
+Dependency assembly - System.IO.FileSystem.DriveInfo.dll
+Dependency assembly - System.ComponentModel.Annotations.dll
+Dependency assembly - System.Net.Utilities.dll
+Dependency assembly - System.Net.Http.WebRequest.dll
+Dependency assembly - System.ServiceModel.Web.dll
+Dependency assembly - System.ComponentModel.dll
+Dependency assembly - System.Runtime.CompilerServices.VisualC.dll
+Dependency assembly - System.Net.dll
+Dependency assembly - System.IdentityModel.dll
+Dependency assembly - System.Net.Ping.dll
+Dependency assembly - System.Security.Cryptography.Hashing.dll
+Dependency assembly - System.ServiceModel.Discovery.dll
+Dependency assembly - System.Diagnostics.TextWriterTraceListener.dll
+Dependency assembly - System.Runtime.InteropServices.WindowsRuntime.dll
+Dependency assembly - System.Management.dll
+Dependency assembly - System.Security.AccessControl.dll
+Dependency assembly - System.Net.Sockets.dll
+Dependency assembly - System.Resources.Reader.dll
+Dependency assembly - System.Net.HttpListener.dll
+Dependency assembly - System.Runtime.Caching.dll
+Dependency assembly - System.Security.Principal.dll
+Dependency assembly - System.Xml.Serialization.dll
+Dependency assembly - System.Messaging.dll
+Dependency assembly - System.Web.RegularExpressions.dll
+Dependency assembly - System.Reflection.Extensions.dll
+Dependency assembly - System.Runtime.Handles.dll
+Dependency assembly - System.Security.Cryptography.Encoding.dll
+Dependency assembly - System.Security.Cryptography.RandomNumberGenerator.dll
+Dependency assembly - System.Drawing.Primitives.dll
+Dependency assembly - System.Web.DynamicData.dll
+Dependency assembly - System.IO.FileSystem.Primitives.dll
+Dependency assembly - System.Threading.Timer.dll
+Dependency assembly - System.Console.dll
+Dependency assembly - System.Collections.Specialized.dll
+Dependency assembly - System.Data.Common.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDsa.dll
+Dependency assembly - System.ComponentModel.Composition.dll
+Dependency assembly - System.Diagnostics.Process.dll
+Dependency assembly - System.Data.Entity.dll
+Dependency assembly - System.IO.Compression.dll
+Dependency assembly - System.Security.SecureString.dll
+Dependency assembly - System.Collections.NonGeneric.dll
+Dependency assembly - System.Runtime.InteropServices.RuntimeInformation.dll
+Dependency assembly - System.Reflection.DispatchProxy.dll
+Dependency assembly - System.Numerics.Vectors.dll
+Dependency assembly - System.Xml.XPath.XDocument.dll
+Dependency assembly - System.IO.Pipes.dll
+Dependency assembly - System.Reflection.TypeExtensions.dll
+Dependency assembly - System.ComponentModel.EventBasedAsync.dll
+Dependency assembly - System.Threading.Thread.dll
+Dependency assembly - System.IO.IsolatedStorage.dll
+Dependency assembly - System.Reflection.Primitives.dll
+Dependency assembly - System.AppContext.dll
+Dependency assembly - System.Drawing.dll
+Dependency assembly - System.IO.FileSystem.AccessControl.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.dll
+Dependency assembly - System.Xml.XmlDocument.dll
+Dependency assembly - System.ServiceProcess.dll
+Dependency assembly - System.Linq.Parallel.dll
+Dependency assembly - System.Web.ApplicationServices.dll
+Dependency assembly - System.Data.DataSetExtensions.dll
+Dependency assembly - System.Text.Encoding.dll
+Dependency assembly - System.Runtime.dll
+Dependency assembly - System.Collections.dll
+Dependency assembly - System.Xml.ReaderWriter.dll
+Dependency assembly - System.IO.Compression.FileSystem.dll
+Dependency assembly - System.IO.dll
+Dependency assembly - Microsoft.Win32.Registry.dll
+Dependency assembly - System.Memory.dll
+Dependency assembly - System.Net.Requests.dll
+Dependency assembly - System.Data.Linq.dll
+Dependency assembly - System.Buffers.dll
+Dependency assembly - System.DirectoryServices.Protocols.dll
+Dependency assembly - System.Runtime.Serialization.Xml.dll
+Dependency assembly - System.Drawing.Design.dll
+Dependency assembly - System.Xml.XDocument.dll
+Dependency assembly - System.IO.FileSystem.Watcher.dll
+Dependency assembly - System.DirectoryServices.dll
+Dependency assembly - System.Windows.Forms.dll
+Dependency assembly - Microsoft.CSharp.dll
+Dependency assembly - System.Configuration.Install.dll
+Dependency assembly - System.Data.Services.Client.dll
+Dependency assembly - System.IO.UnmanagedMemoryStream.dll
+Dependency assembly - System.ServiceModel.dll
+Dependency assembly - System.Security.Cryptography.DeriveBytes.dll
+Dependency assembly - System.Diagnostics.TraceSource.dll
+Dependency assembly - System.Reflection.Context.dll
+Dependency assembly - System.Transactions.dll
+Dependency assembly - System.Data.dll
+Dependency assembly - System.Runtime.Serialization.Primitives.dll
+Dependency assembly - System.Security.Cryptography.Cng.dll
+Dependency assembly - System.Windows.dll
+Dependency assembly - System.Linq.dll
+Dependency assembly - System.Reflection.dll
+Dependency assembly - System.Xml.XmlSerializer.dll
+Dependency assembly - System.Resources.Writer.dll
+
+DisplayProgressbar: Initializing
+Android PostProcess task "Initializing" took 0.651 ms
+DisplayProgressbar: Check gradle project collisions
+Android PostProcess task "Check gradle project collisions" took 0.2553 ms
+DisplayProgressbar: Preparing banner
+Android PostProcess task "Preparing banner" took 0.347 ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.2412ms
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/bee_backend --ipc --dagfile="Library/Bee/Player5f492660.dag" --profile="Library/Bee/backend1.traceevents" Player
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+DisplayProgressbar: Incremental Player Build
+[411/788    0s] AddBootConfigGUID Library/Bee/artifacts/Android/boot.config
+[417/788    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/boot.config
+[445/788    3s] UnityLinker /home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/unitylinker_xy1a.traceevents
+/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/build/deploy/UnityLinker --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AIModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ARModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AccessibilityModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AndroidJNIModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AnimationModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AssetBundleModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AudioModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ClothModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ContentLoadModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.CoreModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.CrashReportingModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.DSPGraphModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.DirectorModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.GIModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.GameCenterModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.GridModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.HotReloadModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.IMGUIModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ImageConversionModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.InputLegacyModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.InputModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.JSONSerializeModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.LocalizationModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ParticleSystemModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.PerformanceReportingModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.Physics2DModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.PhysicsModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ProfilerModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.PropertiesModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ScreenCaptureModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SharedInternalsModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SpriteMaskModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SpriteShapeModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.StreamingModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SubstanceModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SubsystemsModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TLSModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TerrainModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TerrainPhysicsModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TextCoreFontEngineModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TextCoreTextEngineModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TextRenderingModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TilemapModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UIElementsModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UIModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UmbraModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityAnalyticsCommonModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityAnalyticsModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityConnectModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityCurlModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityTestProtocolModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestAudioModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestTextureModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestWWWModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VFXModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VRModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VehiclesModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VideoModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.WindModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.XRModule.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.dll --allowed-assembly=/home/ubuntu/clawd/TapToBounce/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Accessibility.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/Microsoft.Win32.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/Microsoft.Win32.Registry.AccessControl.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/Microsoft.Win32.Registry.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.AppContext.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Buffers.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Collections.Concurrent.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Collections.NonGeneric.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Collections.Specialized.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Collections.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ComponentModel.Annotations.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ComponentModel.EventBasedAsync.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ComponentModel.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ComponentModel.TypeConverter.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ComponentModel.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Console.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Data.Common.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Data.SqlClient.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.Contracts.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.Debug.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.FileVersionInfo.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.Process.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.StackTrace.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.TextWriterTraceListener.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.Tools.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.TraceEvent.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.TraceSource.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Diagnostics.Tracing.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Drawing.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Dynamic.Runtime.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Globalization.Calendars.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Globalization.Extensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Globalization.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.Compression.ZipFile.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.FileSystem.AccessControl.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.FileSystem.DriveInfo.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.FileSystem.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.FileSystem.Watcher.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.FileSystem.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.IsolatedStorage.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.MemoryMappedFiles.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.Pipes.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.UnmanagedMemoryStream.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.IO.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Linq.Expressions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Linq.Parallel.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Linq.Queryable.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Linq.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Memory.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.AuthenticationManager.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Cache.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.HttpListener.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Mail.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.NameResolution.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.NetworkInformation.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Ping.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Requests.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Security.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.ServicePoint.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Sockets.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.Utilities.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.WebHeaderCollection.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.WebSockets.Client.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Net.WebSockets.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ObjectModel.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.DispatchProxy.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.Emit.ILGeneration.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.Emit.Lightweight.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.Emit.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.Extensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.TypeExtensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Reflection.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Resources.Reader.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Resources.ReaderWriter.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Resources.ResourceManager.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Resources.Writer.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.CompilerServices.VisualC.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Extensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Handles.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.InteropServices.RuntimeInformation.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.InteropServices.WindowsRuntime.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.InteropServices.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Loader.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Numerics.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Serialization.Formatters.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Serialization.Json.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Serialization.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.Serialization.Xml.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Runtime.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.AccessControl.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Claims.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Algorithms.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Cng.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Csp.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.DeriveBytes.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Encoding.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Encryption.Aes.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Encryption.ECDiffieHellman.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Encryption.ECDsa.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Encryption.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Hashing.Algorithms.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Hashing.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.OpenSsl.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Pkcs.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.ProtectedData.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.RSA.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.RandomNumberGenerator.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Cryptography.X509Certificates.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Principal.Windows.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.Principal.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Security.SecureString.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ServiceModel.Duplex.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ServiceModel.Http.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ServiceModel.NetTcp.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ServiceModel.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ServiceModel.Security.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ServiceProcess.ServiceController.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Text.Encoding.CodePages.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Text.Encoding.Extensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Text.Encoding.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Text.RegularExpressions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.AccessControl.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.Overlapped.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.Tasks.Extensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.Tasks.Parallel.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.Tasks.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.Thread.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.ThreadPool.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.Timer.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Threading.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.ValueTuple.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.ReaderWriter.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.XDocument.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.XPath.XDocument.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.XPath.XmlDocument.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.XPath.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.XmlDocument.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.XmlSerializer.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/System.Xml.Xsl.Primitives.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades/netstandard.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Microsoft.CSharp.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Mono.Data.Sqlite.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Mono.Data.Tds.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Mono.Security.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ComponentModel.Composition.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ComponentModel.DataAnnotations.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Configuration.Install.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Configuration.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Core.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.DataSetExtensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.Entity.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.Linq.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.OracleClient.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.Services.Client.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.Services.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Data.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Design.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.DirectoryServices.Protocols.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.DirectoryServices.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Drawing.Design.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Drawing.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.EnterpriseServices.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.IO.Compression.FileSystem.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.IO.Compression.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.IdentityModel.Selectors.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.IdentityModel.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Json.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Management.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Messaging.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Net.Http.WebRequest.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Net.Http.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Net.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Numerics.Vectors.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Numerics.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Reflection.Context.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Runtime.Caching.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Runtime.DurableInstancing.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Runtime.Remoting.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Runtime.Serialization.Formatters.Soap.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Runtime.Serialization.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Security.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceModel.Activation.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceModel.Discovery.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceModel.Internals.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceModel.Routing.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceModel.Web.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceModel.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.ServiceProcess.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Transactions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.ApplicationServices.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.DynamicData.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.Extensions.Design.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.Extensions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.RegularExpressions.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.Services.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Web.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Windows.Forms.DataVisualization.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Windows.Forms.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Windows.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Xaml.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Xml.Linq.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Xml.Serialization.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.Xml.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/System.dll --allowed-assembly=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/mscorlib.dll --out=Library/Bee/artifacts/Android/ManagedStripped --include-link-xml=/home/ubuntu/clawd/TapToBounce/Temp/StagingArea/Data/Managed/TypesInScenes.xml --include-link-xml=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/AndroidNativeLink.xml --include-directory=/home/ubuntu/clawd/TapToBounce/Library/Bee/PlayerScriptAssemblies --include-directory=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed --include-directory=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux --include-directory=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityaot-linux/Facades --profiler-report --profiler-output-file=/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/unitylinker_xy1a.traceevents --dotnetprofile=unityaot-linux --dotnetruntime=Il2Cpp --platform=Android --use-editor-options --enable-engine-module-stripping --engine-modules-asset-file=/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/modules.asset --editor-data-file=/home/ubuntu/clawd/TapToBounce/Temp/StagingArea/Data/Managed/EditorToUnityLinkerData.json --include-unity-root-assembly=/home/ubuntu/clawd/TapToBounce/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll --print-command-line --enable-analytics
+*** Tundra requires additional run (3.36 seconds), 3 items updated, 788 evaluated
+*** Additional run caused by: contents change of Library/Bee/artifacts/Android/ManagedStripped
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/netcorerun/netcorerun "/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/AndroidPlayerBuildProgram.exe" "/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Bee:/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/BuildPipeline" "Library/Bee/Player5f492660.dag.json" "Library/Bee/Player5f492660-inputdata.json" "Library/Bee/buildprogram0.traceevents"
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+ExitCode: 4 Duration: 3s413ms
+ExitCode: 0 Duration: 0s541ms
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/bee_backend --ipc --dagfile="Library/Bee/Player5f492660.dag" --dagfilejson="Library/Bee/Player5f492660.dag.json" --profile="Library/Bee/backend2.traceevents" Player
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+[W] opendir() failed: /home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp/Symbols
+Finished compiling graph: 799 nodes, 1948 flattened edges (1942 ToBuild, 9 ToUse), maximum node priority 336
+[           0s] Delete 12 artifact files that are no longer in use. (like /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt)
+[389/791    0s] ClassRegistrationGenerator /home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/UnityClassRegistration.cpp
+[390/791    0s] ICallRegistrationGenerator /home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/UnityICallRegistration.cpp
+[391/791    0s] Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o
+[392/791    0s] Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/armeabi-v7a/UnityICallRegistration.o
+[393/791    0s] Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o
+[394/791    0s] Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/armeabi-v7a/UnityClassRegistration.o
+[395/791    1s] Link libunity Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so
+[396/791    1s] Link libunity Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so
+[398/791    0s] Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so
+[399/791    0s] Generate Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so
+[402/791    0s] WriteText Library/Bee/artifacts/csharpactions/UnityEngine.PhysicsModule-FeaturesChecked.txt_2l1t.info
+[421/791    0s] Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so
+[422/791    0s] Generate Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.sym.so
+[424/791    0s] ExtractUsedFeatures Library/Bee/artifacts/Android/Features/UnityEngine-FeaturesChecked.txt
+[426/791    0s] ExtractUsedFeatures Library/Bee/artifacts/Android/Features/UnityEngine.CoreModule-FeaturesChecked.txt
+[429/791    5s] IL2CPP_CodeGen /home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/il2cpp_conv_o3ha.traceevents
+/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/build/deploy/il2cpp --convert-to-cpp --assembly=Library/Bee/artifacts/Android/ManagedStripped/Assembly-CSharp.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/Mono.Security.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/System.Configuration.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/System.Core.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/System.Xml.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/System.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.AndroidJNIModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.AudioModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.CoreModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.InputLegacyModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.ParticleSystemModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.Physics2DModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.PhysicsModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.PropertiesModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.SharedInternalsModule.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/UnityEngine.dll --assembly=Library/Bee/artifacts/Android/ManagedStripped/mscorlib.dll --generatedcppdir=/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp --symbols-folder=/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp/Symbols --enable-analytics --emit-null-checks --enable-array-bounds-check --dotnetprofile=unityaot-linux --profiler-report --profiler-output-file=/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/il2cpp_conv_o3ha.traceevents --print-command-line --data-folder=/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/data
+[431/791    0s] ExtractUsedFeatures Library/Bee/artifacts/Android/Features/UnityEngine.SharedInternalsModule-FeaturesChecked.txt
+[438/791    0s] Stripping Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so
+[440/791    0s] ExtractUsedFeatures Library/Bee/artifacts/Android/Features/Assembly-CSharp-FeaturesChecked.txt
+[442/791    0s] Stripping Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so
+[446/791    0s] WriteText Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info
+[448/791    0s] Adding note Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so -> /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so
+[451/791    0s] Adding note Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so -> /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so
+[454/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityLinkerToEditorData.json
+[455/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.dll
+[460/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.pdb
+[461/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.dll
+[475/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.dll
+[478/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Assembly-CSharp.dll
+[490/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.pdb
+[491/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.dll
+[496/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.pdb
+[497/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/analytics.json
+[499/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.pdb
+[502/791    0s] CopyFiles /home/ubuntu/clawd/TapToBounce/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Assembly-CSharp.pdb
+[510/791    0s] ExtractUsedFeatures Library/Bee/artifacts/Android/Features/UnityEngine.PhysicsModule-FeaturesChecked.txt
+[511/791    0s] Generate Manifests Library/Bee/artifacts/Android/Manifest/LauncherManifestDiag.txt (+3 others)
+*** Tundra requires additional run (6.12 seconds), 37 items updated, 791 evaluated
+*** Additional run caused by: contents change of /home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/netcorerun/netcorerun "/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/AndroidPlayerBuildProgram.exe" "/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/Bee:/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/BuildPipeline" "Library/Bee/Player5f492660.dag.json" "Library/Bee/Player5f492660-inputdata.json" "Library/Bee/buildprogram1.traceevents"
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+ExitCode: 4 Duration: 6s219ms
+ExitCode: 0 Duration: 0s732ms
+Starting: /home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/bee_backend --ipc --dagfile="Library/Bee/Player5f492660.dag" --dagfilejson="Library/Bee/Player5f492660.dag.json" --profile="Library/Bee/backend3.traceevents" Player
+WorkingDir: /home/ubuntu/clawd/TapToBounce
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+Finished compiling graph: 806 nodes, 1969 flattened edges (1963 ToBuild, 9 ToUse), maximum node priority 343
+[224/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/gnpm71fgmwtx.o
+[226/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/goxemtrm9nna.o
+[227/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/nmswgutrysfu.o
+[230/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/llvjbo35xtig.o
+[231/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/btwlcaj0jtv6.o
+[232/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/yhy6qxyfk4w7.o
+[237/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/9ot25sz4z4no.o
+[238/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/1vseh3l8akuf.o
+[239/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/me6blbsuho5w.o
+[240/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/jlueav3otnx4.o
+[241/798    4s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/w4undzrmqxze.o
+[243/798    0s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/jbu31w969n8p.o
+[401/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/87fij6796yn2.o
+[403/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/1pexpo6a63bn.o
+[404/798    4s] C_Android_arm32 Library/Bee/artifacts/Android/iz17e/qjfuvnm592sj.o
+[407/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/u2lj53k8dkn5.o
+[411/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/ly6ov1g39vih.o
+[412/798    5s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/37lgtx0f0b4w.o
+[416/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/9ot25sz4z4no.o
+[417/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/spozthz22zum.o
+[418/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/w13c2lvo60em.o
+[419/798    5s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/xcf4xe8kuzgu.o
+[420/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/nmswgutrysfu.o
+[422/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/jlueav3otnx4.o
+[424/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/1vseh3l8akuf.o
+[427/798    0s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/isisdomixnsd.o
+##### CommandLine
+"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -march=armv8-a -D__ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ -faddrsig -mllvm -hoist-common-insts=1 -DANDROID -DHAVE_INTTYPES_H -no-canonical-prefixes -funwind-tables -fomit-frame-pointer -std=c++11 -Wswitch -Wno-trigraphs -Wno-tautological-compare -Wno-invalid-offsetof -Wno-implicitly-unsigned-literal -Wno-integer-overflow -Wno-shift-negative-value -Wno-unknown-attributes -Wno-implicit-function-declaration -Wno-null-conversion -Wno-missing-declarations -Wno-unused-value -Wno-pragma-once-outside-header -fvisibility=hidden -fexceptions -fno-rtti -g -Os -fPIC -fno-strict-overflow -ffunction-sections -fdata-sections -fstack-protector -fmessage-length=0 -pipe -D_GLIBCXX_USE_CXX11_ABI=0 -DBASELIB_INLINE_NAMESPACE=il2cpp_baselib -DIL2CPP_MONO_DEBUGGER_DISABLED -DRUNTIME_IL2CPP -DTARGET_ARM64 -DIL2CPP_ENABLE_WRITE_BARRIERS=1 -DIL2CPP_INCREMENTAL_TIME_SLICE=3 -DHAVE_BDWGC_GC -DNDEBUG -I"." -I"/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/libil2cpp/pch" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/libil2cpp" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/external/baselib/Include" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/libil2cpp/os/ClassLibraryPAL/brotli/include" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/external/baselib/Platforms/Android/Include" -o "Library/Bee/artifacts/Android/d8kzr/isisdomixnsd.o" -fcolor-diagnostics -target aarch64-linux-android22 -fstrict-aliasing -fdiagnostics-format=msvc -c -x c++ "/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp/Generics__4.cpp"
+##### ExitCode
+143
+[428/798    2s] C_Android_arm64 Library/Bee/artifacts/Android/d8kzr/w4undzrmqxze.o
+##### CommandLine
+"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -march=armv8-a -D__ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ -faddrsig -mllvm -hoist-common-insts=1 -DANDROID -DHAVE_INTTYPES_H -no-canonical-prefixes -funwind-tables -fomit-frame-pointer -std=c++11 -Wswitch -Wno-trigraphs -Wno-tautological-compare -Wno-invalid-offsetof -Wno-implicitly-unsigned-literal -Wno-integer-overflow -Wno-shift-negative-value -Wno-unknown-attributes -Wno-implicit-function-declaration -Wno-null-conversion -Wno-missing-declarations -Wno-unused-value -Wno-pragma-once-outside-header -fvisibility=hidden -fexceptions -fno-rtti -g -Os -fPIC -fno-strict-overflow -ffunction-sections -fdata-sections -fstack-protector -fmessage-length=0 -pipe -D_GLIBCXX_USE_CXX11_ABI=0 -DBASELIB_INLINE_NAMESPACE=il2cpp_baselib -DIL2CPP_MONO_DEBUGGER_DISABLED -DRUNTIME_IL2CPP -DTARGET_ARM64 -DIL2CPP_ENABLE_WRITE_BARRIERS=1 -DIL2CPP_INCREMENTAL_TIME_SLICE=3 -DHAVE_BDWGC_GC -DNDEBUG -I"." -I"/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/libil2cpp/pch" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/libil2cpp" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/external/baselib/Include" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/libil2cpp/os/ClassLibraryPAL/brotli/include" -I"/home/ubuntu/Unity/Hub/Editor/2022.3.62f3/Editor/Data/il2cpp/external/baselib/Platforms/Android/Include" -o "Library/Bee/artifacts/Android/d8kzr/w4undzrmqxze.o" -fcolor-diagnostics -target aarch64-linux-android22 -fstrict-aliasing -fdiagnostics-format=msvc -c -x c++ "/home/ubuntu/clawd/TapToBounce/Library/Bee/artifacts/Android/il2cppOutput/cpp/Generics__2.cpp"
+##### ExitCode
+143
+*** Tundra build interrupted (14.18 seconds), 27 items updated, 427 evaluated

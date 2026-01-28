@@ -1,0 +1,13 @@
+using UnityEditor;
+using UnityEngine;
+
+public class BuildScript
+{
+    public static void BuildAndroid()
+    {
+        string[] scenes = { "Assets/Scenes/Main.unity" };
+        string buildPath = "TapToBounce_Mega.apk";
+        
+        BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
+    }
+}

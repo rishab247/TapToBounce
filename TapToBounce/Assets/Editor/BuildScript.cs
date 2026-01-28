@@ -26,4 +26,12 @@ public class BuildScript
         
         BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
     }
+
+    public static void BuildRobot()
+    {
+        string[] scenes = { "Assets/Scenes/Main.unity" };
+        string buildPath = "TapToBounce_Robot.apk";
+        
+        BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.Android, BuildOptions.None);
+    }
 }

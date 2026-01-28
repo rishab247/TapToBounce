@@ -42,7 +42,7 @@ public class LevelGenerator : MonoBehaviour
 
             GameObject platform = GameObject.CreatePrimitive(PrimitiveType.Cube);
             platform.transform.position = pos;
-            platform.transform.localScale = new Vector3(1.5f, 0.5f, 1f);
+            platform.transform.localScale = new Vector3(2.5f, 0.5f, 1f);
             platform.GetComponent<Renderer>().material.color = new Color(0.3f, 0.8f, 0.3f);
 
             // Make it solid for 2D Physics

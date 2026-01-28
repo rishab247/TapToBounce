@@ -25,6 +25,7 @@ public class Bounce : MonoBehaviour
         gameObject.tag = "Player";
         rb = GetComponent<Rigidbody2D>();
         if (rb == null) rb = gameObject.AddComponent<Rigidbody2D>();
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         
         sr = GetComponent<SpriteRenderer>();
         originalScale = transform.localScale;
